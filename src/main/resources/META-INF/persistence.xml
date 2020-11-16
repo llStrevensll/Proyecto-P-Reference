@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <!-- Define Persistence Unit -->
+  <persistence-unit name="ProyectoPersonalPU" transaction-type="JTA">
+    <!--transaction-type="RESOURCE_LOCAL",,, transaction-type="JTA"-->
+    <jta-data-source>jdbc/ProyectoPersonalDb</jta-data-source>
+    <!--
+        <properties>
+            <property name="eclipselink.logging.level.sql" value="FINE" />
+            <property name="eclipselink.loggin.parameters" value="true" />
+        </properties> -->
+    <!-- <class>co.com.strevens.pp.domain.Persona</class> 
+        mysql -->
+    <!--<properties> 
+
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/test?useSSL=false&useTimezone=true&serverTimezone=UTC"></property>
+            <property name="javax.persistence.jdbc.user" value="prueba"></property>
+            <property name="javax.persistence.jdbc.password" value="prueba"></property>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.MysqlDataSource"></property>
+            <property name="eclipselink.logging.level.sql" value="FINE"></property>
+            <property name="eclipselink.logging.parameters" value="true"></property> -->
+    <!--oracle
+            final static String DB_URL= "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(HOST=myhost)(PORT=1521)(PROTOCOL=tcp))(CONNECT_DATA=(SERVICE_NAME=myorcldbservicename)))";
+            final static String DB_URL= "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(HOST=localhost)(PORT=1521)(PROTOCOL=tcp))(CONNECT_DATA=(SERVICE_NAME=xepdb1)))";-->
+    <!--<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(HOST=localhost)(PORT=1521)(PROTOCOL=tcp))(CONNECT_DATA=(SERVICE_NAME=xepdb1)))"></property>
+            <property name="javax.persistence.jdbc.user" value="prueba"></property>
+            <property name="javax.persistence.jdbc.password" value="prueba"></property>
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver"></property>
+            <property name="eclipselink.logging.level.sql" value="FINE"></property>
+            <property name="eclipselink.logging.parameters" value="true"></property> -->
+    <!--</properties>  -->
+  </persistence-unit>
+</persistence>
